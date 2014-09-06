@@ -71,7 +71,7 @@ $cal_text = '';
 
 $calSc->ecalClass = &$ecal_class;			// Give shortcodes a pointer to calendar class
 
-$ev_list = $ecal_class->get_n_events($show_count, $start_time, $end_time, varset($this->ecal_class->pref['eventpost_fe_set'],FALSE), $show_recurring, 
+$ev_list = $ecal_class->get_n_events($show_count, $start_time, $end_time, varset($ecal_class->pref['eventpost_fe_set'],FALSE), $show_recurring, 
 						'event_id,event_start, event_thread, event_title, event_recurring, event_allday, event_category', 'event_cat_icon');
 
 $cal_totev = count($ev_list);
