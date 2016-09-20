@@ -138,7 +138,7 @@ class calendar_menu_cron // include plugin-folder in the name.
 
 
 		$this->startTime = mktime(0, 0, 0, date('n'), date('d'), date('Y'));	// Date for start processing
-		setScVar('event_calendar_shortcodes', 'ecalClass', &$this->ecalClass);			// Give shortcode a pointer to calendar class
+		setScVar('event_calendar_shortcodes', 'ecalClass', $this->ecalClass);			// Give shortcode a pointer to calendar class
 
 
 		$this->logRequirement = varset($this->ecal_class->pref['eventpost_emaillog'], 0);
